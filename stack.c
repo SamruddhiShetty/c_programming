@@ -1,4 +1,4 @@
-
+// to find the maximum element
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
@@ -28,7 +28,7 @@ void check(int no, st *stack1, st *s2){
         case 1:
           scanf("%d", &element);
           push(element, stack1);
-           if (element>max){
+           if (element>=max){  //very imp to give >= 
                 max=element;
                 push(max, s2);
             }
